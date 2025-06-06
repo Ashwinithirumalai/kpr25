@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html :lang="en">
+<head>
+<meta charset="UTF-8">
+<title> my personal website</title>
+<style>
+   body {
+font-family: Arial,
+sans-serif;
+margin:0;
+background:#f0f0f0;
+color :#333;
+ }
+ header{
+    background-color: #333;
+    color: rgb(247, 243, 243);
+    padding:20PX 0;
+    text-align: center;
+ }
+ nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15PX;
+     font-weight :bold;
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    
+}
+section{
+    margin-bottom: 30px;
+}
+h2{
+    color: #444;
+}
+footer{
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+ul{ padding-left: 20px;}
+@media(max-width:600px) {body
+    { padding: 10px;}
+    nav a { 
+        display: block;
+        margin: 10px 0;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>welcome to my website</h1>
+        <nav>
+            <a href="#about"></a>
+            <a href="#project"></a>
+            <a href="contact"></a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2> about me </h2>
+            <p> i am the student of 1st year in kpr arts and science in the department of bca and now we are in the learning of fullstack development
+                of day 3 sarted to create the website
+            </p>
+        </section>
+         <section id="project"></section>
+         <h2> project</h2>
+         <ul>
+            <li> portfolio website</li>
+            <li> simple calculator</li>
+            <li> blog page website</li>
+         </ul>
+         </section>
+         <section id="contact">
+            <h2> contact me </h2>
+            <p> ashuthirumalai@gmail.com</p>
+            <p> phone: 9876543210</p>
+         </section>
+    </main>
+    <footer>
+        <p>& copy :2025 my personal website
+        </p>
+    </footer>
+    </body>
+</html>
