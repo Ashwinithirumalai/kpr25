@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <title>Simple Registration Form</title>
+</head>
+<body>
+    <style>
+        h2
+        {
+             color: rgb(255, 0, 51);
+        }
+    </style>
+    <h2>Register Here !</h2>
+    <form id="form">
+        <label>Email: <input type="text" id="email" placeholder="Enter email"></label><br>
+        <label>Password: <input type="password" id="password" placeholder="Enter password"></label><br>
+        <label>Name: <input type="text" id="name" placeholder="Enter name"></label><br>
+        <label>Register No: <input type="number" id="register_no" placeholder="Enter register number"></label><br>
+        
+        <button type="button" onclick="displayInfo()">Submit</button>
+    </form>
+
+    <h3>Entered Details:</h3>
+    <ul id="output"></ul>
+
+    <script>
+        function displayInfo() {
+            const fields = ["email", "password", "name", "register_no"];
+            const outputList = document.getElementById('output');
+            outputList.innerHTML = ''; 
+            
+            fields.forEach(field => {
+                const li = document.createElement('li');
+                li.innerText = `${field.charAt(0).toUpperCase() + field.slice(1)}: ` + document.getElementById(field).value;
+                outputList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
